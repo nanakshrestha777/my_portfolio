@@ -9,10 +9,20 @@ const Navbar = () => {
     /*Event handling */
     const handleclick = () => onclick(!click);
     console.log(click)
+    const[color, setColor] = useState(false);
+    const changeColor = () => {
+        if(window.scrollY >=100){
+            setColor(true);
+
+        }else{
+            setColor(false);
+        }
+    };
+    window.addEventListener("scroll", changeColor);
   return (
-    <div className="header">
+    <div className={color ? "header header-bg" :"header" }>
         <Link to={"/"}>
-            <h1>DataWhizNanak</h1>
+            <h1>DataWhiz.</h1>
         </Link>
         {/* if clicked nav-menu.active else nav-menu */}
         <ul className={click ? "nav-menu active":"nav-menu"}>
