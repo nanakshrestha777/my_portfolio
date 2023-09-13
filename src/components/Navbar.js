@@ -2,6 +2,8 @@ import "./NavbarStyles.css"
 import React, {useState} from "react";
 import { Link } from "react-router-dom"
 import {FaBars,FaTimes} from "react-icons/fa"
+// import {HiOutlineMail} from 'react-icons/hi'
+// import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Navbar = () => {
     /* use of useState hook for hamburger */
@@ -22,7 +24,7 @@ const Navbar = () => {
   return (
     <div className={color ? "header header-bg" :"header" }>
         <Link to={"/"}>
-            <h1>DataWhiz.</h1>
+            <h1>AKA.NANAK</h1>
         </Link>
         {/* if clicked nav-menu.active else nav-menu */}
         <ul className={click ? "nav-menu active":"nav-menu"}>
@@ -42,9 +44,9 @@ const Navbar = () => {
         <div className="hamburger" onClick={handleclick}>
             {click ? (
             <FaTimes size={20} style={{
-            color: "#000" }} />
+            color: "#fff" }} />
             ) : (
-            <FaBars size={20} style={{color: "#000" }}
+            <FaBars size={20} style={{color: "#fff" }}
             />
             )}
 
@@ -52,7 +54,12 @@ const Navbar = () => {
 
 
         </div>
+      
+   
+       
     </div>
+    
+    
   )
 }
 
