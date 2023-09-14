@@ -13,12 +13,7 @@ const heroimg = () => {
         <h1>Hello, I'm Nanak Shrestha. </h1>
         <p>Pursuing Data Science Education</p>
         <div className="space-x-6 space-y-3">
-          {/* <button className="rectangle-x border-4 border-purple-800 px-7 py-3 text-base font-medium  text-white hover:bg-black hover:text-purple active:bg-blue-700/5 dark:border-blue-400 dark:bg-blue-400/10 dark:text-white dark:hover:bg-blue-300/10 dark:active:bg-blue-200/10">
-            <Link to="/project" className="btn btn-light">
-              Projects
-            </Link>
-
-          </button> */}
+       
           <Link to="/project" className="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-blue-600 border-2 border-blue-600 rounded-full hover:text-white group hover:bg-gray-50">
             <span className="absolute left-0 block w-full h-0 transition-all bg-blue-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
             <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
