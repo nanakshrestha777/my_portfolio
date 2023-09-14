@@ -1,0 +1,98 @@
+.Project-heading{
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+.Project-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;;
+}
+.Propject-card{
+    background: #1a1a1a;
+    padding: 1.2rem 1rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.Propject-card img{
+    width : 100%;
+
+}
+.Project-title{
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: justify;
+}
+.Pro-details p{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.Pro-btns{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0.5rem 6rem;
+}
+.Pro-btns .btn{
+    padding: 0.5 rem 3rem;;
+}
+
+.Project-heading {
+    font-family: 'YourFancyFont', cursive;
+    color: skyblue;
+  }
+
+/* .glow-effect {
+    position: relative;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 105, 180, 0.4);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 105, 180, 0.4);
+  } */
+
+.Project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}
+  
+.glow-effect {
+    position: relative;
+    text-shadow: 0 0 20px rgba(135,206,250,0.8), 0 0 40px rgba(135,206,250,0.6), 0 0 60px rgba(135,206,250,0.4);
+    box-shadow: 0 0 20px rgba(135,206,250,0.8), 0 0 40px rgba(135,206,250,0.6), 0 0 60px rgba(135,206,250,0.4);
+  }
+ @media screen and (max-width: 720px){
+
+    .Project-container {
+        max-width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .Pro-btns{
+        display: flex;
+        /* justify-content: space-between; */
+        padding: 0.5rem 9rem;
+    }
+        
+
+    
+    /* .Project-container {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+
+    }
+    .Propject-card{
+        background: #1a1a1a;
+        padding: 1.2rem 5rem;
+    } */
+
+}
