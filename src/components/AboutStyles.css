@@ -48,6 +48,22 @@
     grid-template-columns: 1fr;
     display: block;
   }
+  .white-box-right {
+    width: 1fr; /* Adjust the width as needed */
+    /* height: 100%; */
+    border: 1px solid white;
+    display: grid;
+    /* display: block; */
+    grid-template-columns: repeat(3, 2fr);
+    gap: 15px;
+
+    margin: 1rem;
+    padding: 20px;
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .left-box {
