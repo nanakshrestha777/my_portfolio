@@ -24,7 +24,9 @@ const Navbar = () => {
   return (
     <div className={color ? "header header-bg" :"header" }>
         <Link to={"/"}>
-            <h1>AKA.NANAK</h1>
+        <h1 className="navbar-logo text-3xl font-bold text-pink-800 uppercase tracking-wide shadow-lg glow hover:animate-pulse">
+      Datawiz.NK
+    </h1>
         </Link>
         {/* if clicked nav-menu.active else nav-menu */}
         <ul className={click ? "nav-menu active":"nav-menu"}>
@@ -53,7 +55,10 @@ const Navbar = () => {
           
 
 
-        </div>
+        </div> 
+       
+
+
       
    
        
