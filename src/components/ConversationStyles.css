@@ -1,0 +1,122 @@
+.coin {
+  position: relative;
+  perspective: 1000px; /* Perspective for 3D transforms */
+}
+
+.coin img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+  backface-visibility: hidden; /* Hide the backface of the coin */
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+
+.flip-effect:hover .front {
+  animation: spin 1s linear infinite; /* Apply the spinning animation on hover */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg); /* Initial rotation */
+  }
+  10% {
+    transform: rotateY(36deg); /* Rotation at 10% */
+  }
+  20% {
+    transform: rotateY(72deg); /* Rotation at 20% */
+  }
+  30% {
+    transform: rotateY(108deg); /* Rotation at 30% */
+  }
+  40% {
+    transform: rotateY(144deg); /* Rotation at 40% */
+  }
+  50% {
+    transform: rotateY(180deg); /* Rotation at 50% */
+  }
+  60% {
+    transform: rotateY(216deg); /* Rotation at 60% */
+  }
+  70% {
+    transform: rotateY(252deg); /* Rotation at 70% */
+  }
+  80% {
+    transform: rotateY(288deg); /* Rotation at 80% */
+  }
+  90% {
+    transform: rotateY(324deg); /* Rotation at 90% */
+  }
+  100% {
+    transform: rotateY(360deg); /* Full rotation */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coin {
+    margin: 1rem;
+    width: 100%;
+    height: 80vh;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding-top: 6rem;
+  }
+
+  .flip-effect:hover .front {
+    animation: spin 0.8s linear infinite;
+  }
+
+  .coin {
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .coin img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000;
+    backface-visibility: hidden;
+    transition: transform 0.5s ease;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg); /* Initial rotation */
+    }
+    10% {
+      transform: rotateY(36deg); /* Rotation at 10% */
+    }
+    20% {
+      transform: rotateY(72deg); /* Rotation at 20% */
+    }
+    30% {
+      transform: rotateY(108deg); /* Rotation at 30% */
+    }
+    40% {
+      transform: rotateY(144deg); /* Rotation at 40% */
+    }
+    50% {
+      transform: rotateY(180deg); /* Rotation at 50% */
+    }
+    60% {
+      transform: rotateY(216deg); /* Rotation at 60% */
+    }
+    70% {
+      transform: rotateY(252deg); /* Rotation at 70% */
+    }
+    80% {
+      transform: rotateY(288deg); /* Rotation at 80% */
+    }
+    90% {
+      transform: rotateY(324deg); /* Rotation at 90% */
+    }
+    100% {
+      transform: rotateY(360deg); /* Full rotation */
+    }
+  }
+}
