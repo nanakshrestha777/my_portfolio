@@ -1,98 +1,113 @@
-.Project-heading{
-    text-align: center;
-    padding: 4rem 0 2rem 0;
+.Project-heading {
+  text-align: center;
+  padding: 4rem 0 2rem 0;
 }
-.Project-container{
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    padding-bottom: 5rem;;
-}
-.Propject-card{
-    background: #1a1a1a;
-    padding: 1.2rem 1rem;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-}
-.Propject-card img{
-    width : 100%;
 
+.Pro-details {
+  display: block;
+  margin: 1rem;
 }
-.Project-title{
-    color: #ffffff;
-    padding: 1rem 0;
-    text-align: justify;
+
+.text-block {
+  flex: 1;
 }
-.Pro-details p{
-    padding-bottom: 1rem;
-    font-size: 1.1rem;
+.Pro-btns {
+  display: flex;
+  padding: 1.5rem;
 }
-.Pro-btns{
-    display: flex;
-    /* justify-content: space-between; */
-    padding: 0.5rem 6rem;
-}
-.Pro-btns .btn{
-    padding: 0.5 rem 3rem;;
+.Pro-btns .btn {
+  padding: 0.5 3rem;
 }
 
 .Project-heading {
-    font-family: 'YourFancyFont', cursive;
-    color: skyblue;
-  }
-
-/* .glow-effect {
-    position: relative;
-    text-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 105, 180, 0.4);
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 105, 180, 0.4);
-  } */
-
-.Project-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 2px;
-    background-color: white;
+  font-family: "YourFancyFont", cursive;
+  color: skyblue;
 }
-  
+
 .glow-effect {
-    position: relative;
-    text-shadow: 0 0 20px rgba(135,206,250,0.8), 0 0 40px rgba(135,206,250,0.6), 0 0 60px rgba(135,206,250,0.4);
-    box-shadow: 0 0 20px rgba(135,206,250,0.8), 0 0 40px rgba(135,206,250,0.6), 0 0 60px rgba(135,206,250,0.4);
-  }
- @media screen and (max-width: 720px){
-
-    .Project-container {
-        max-width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        justify-items: center;
-    }
-
-    .Pro-btns{
-        display: flex;
-        /* justify-content: space-between; */
-        padding: 0.5rem 9rem;
-    }
-        
-
-    
-    /* .Project-container {
-        max-width: 90%;
-        margin: auto;
-        grid-template-columns: 1fr;
-
-    }
-    .Propject-card{
-        background: #1a1a1a;
-        padding: 1.2rem 5rem;
-    } */
-
+  position: relative;
+  text-shadow: 0 2px 4px rgba(135, 206, 250, 0.8),
+    0 -2px 4px rgba(135, 206, 250, 0.8);
+  box-shadow: 0 2px 4px rgba(135, 206, 250, 0.8),
+    0 -2px 4px rgba(135, 206, 250, 0.8);
+  width: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .Project-card1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .Project-card2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Project-card3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .text-block {
+    font-size: 1rem;
+  }
+  .content-container {
+    display: block;
+    padding: 20px;
+  }
+
+  .image-container img {
+    padding: 10px;
+  }
+
+  .Pro-btns {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Pro-details {
+    padding: 1rem;
+  }
+}
+
+.Pro-btns {
+  display: flex;
+  padding: 1rem 12rem;
+}
+
+.Project-card1 {
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  padding: 0 2rem;
+}
+.Project-card2 {
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  padding: 0 2rem;
+}
+.Project-card2 img {
+  width: 70rem;
+}
+.Project-card3 {
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  padding: 0 2rem;
+}
+.Project-card3 img {
+  width: 77rem;
+}
+
+/* .image-container {
+  flex: 0 0 300px;
+  margin-right: 2rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+} */
