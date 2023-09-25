@@ -1,6 +1,7 @@
 import React from 'react'
 import "./ConversationStyles.css"
-import img from "../assests/bg-img.jpg";
+import MYIMG from "../assets/myimg.png"
+// import img from "../assests/bg-img.jpg";
 const Conversation = () => {
   return (
     <div id="contact" className='max-w-[1140px] m-auto w-full p-4 py-16'>
@@ -9,11 +10,11 @@ const Conversation = () => {
         <h2 className="text-center text-white text-3xl font-bold my-4">Send us a message</h2>
         <hr className="w-full h-1 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500" />
         <div className='grid md:grid-cols-2'>
-          <img
-          src={img} alt='/'
-          className='rounded-lg shadow-md h-96 object-cover max-w-sm mx-8 my-5'/>
-
-          <form className="flex items-center justify-center bg-gray-100 py-8">
+          <div class="coin flip-effect mx-10  m-10" >
+            <img src={MYIMG} alt='/' className='front' />
+          </div>
+        
+          <form className="flex items-center justify-center bg-gray-100 py-8 my-8">
             <div className="w-full max-w-md bg-white rounded-lg shadow-lg mx-auto">
               <div className="p-6">
                 <h2 className="text-2xl text-center font-bold mb-6">Contact Form</h2>
@@ -31,7 +32,7 @@ const Conversation = () => {
             </div>
           </form>
        
-        </div>s
+        </div>
     
     </div>
   )
