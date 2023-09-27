@@ -7,7 +7,7 @@
 }
 .hero-img::before{
     content: "";
-    background: url("https://media.istockphoto.com/id/678675846/photo/3d-code-sign.jpg?s=612x612&w=0&k=20&c=1G2irvtFV7ybFm_1-4Lfh-15bj2P8GZKO1aHp6P1UhA=");
+    background: url("https://images.unsplash.com/photo-1545665277-5937489579f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
     background-size: cover;
     background-position: center top;
 

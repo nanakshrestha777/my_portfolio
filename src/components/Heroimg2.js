@@ -1,6 +1,7 @@
 import "./Heroimg2Styles.css";
 import React, {Component} from "react";
 
+
 class Heroimg2 extends Component {
   render() {
     return (
@@ -13,5 +14,5 @@ class Heroimg2 extends Component {
     );
   }
 }
-
+ 
 export default Heroimg2;

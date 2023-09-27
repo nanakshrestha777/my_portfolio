@@ -1,4 +1,5 @@
 import "./FooterStyles.css";
+import CV from "../assets/resume.png"; // Make sure the path and file name are correct
 
 import React from "react";
 import {  FaGithub, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter } from "react-icons/fa";
@@ -11,7 +12,6 @@ const Footer = () => {
             <FaHome size={20} style={{ color: "fff", marginRight: "1rem" }} />
             <div>
               <h4>Kathmandu, Nepal</h4>
-              {/* <p>Nepal</p> */}
             </div>
           </div>
           <div className="phone">
@@ -34,22 +34,30 @@ const Footer = () => {
           </div>
         </div>
         <div className="right">
-          <h4>About Me</h4>
-          <p>This is me -UnderConstruction</p>
+          <a href={CV} download className="download-button">
+            Download CV
+          </a>
           <div className="social">
-            <FaGithub
-              size={35}
-              style={{ color: " #24292e", marginRight: "2rem" }}
-            />
-            <FaTwitter
-              size={35}
-              style={{ color: "1DA1F2", marginRight: "2rem" }}
-            />
-            <FaLinkedin
-              size={35}
-              style={{ color: "0A66C2", marginRight: "2rem" }}
-            />
+            <a href="https://github.com/nanakshrestha777" target="_blank" rel="noopener noreferrer">
+              <FaGithub
+                size={35}
+                style={{ color: "#24292e", marginRight: "2rem" }}
+              />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter
+                size={35}
+                style={{ color: "#1DA1F2", marginRight: "2rem" }}
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/nanak-shrestha-6aa2b6258/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin
+                size={35}
+                style={{ color: "#0A66C2", marginRight: "2rem" }}
+              />
+            </a>
           </div>
+
         </div>
       </div>
     </div>

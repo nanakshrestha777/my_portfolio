@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ConversationStyles.css"
-import MYIMG from "../assets/myimg.png"
-// import img from "../assests/bg-img.jpg";
+import MYIMG from "../assets/my-img.jpg"
+
 const Conversation = () => {
   return (
 
